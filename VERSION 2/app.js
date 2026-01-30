@@ -7,12 +7,12 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://w
 // --- CONFIGURATION ---
 // TODO: Replace with your values from src/lib/firebase/config.ts
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAdxhMoFP3gKGB1_muHJOtSqjStw_HzvJc",
+  authDomain: "smartlibz.firebaseapp.com",
+  projectId: "smartlibz",
+  storageBucket: "smartlibz.firebasestorage.app",
+  messagingSenderId: "1099209948074",
+  appId: "1:1099209948074:web:3249a5609618ef47a709d3"
 };
 
 // Initialize Firebase
