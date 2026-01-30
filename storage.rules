@@ -1,0 +1,14 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    match /organizations/{orgId}/{allPaths=**} {
+       allow read: if request.auth != null; 
+       // In production, verify user belongs to org via custom claims or firestore lookups (requires advanced setup)
+       // For now, allow authenticated reads to known org paths
+       
+       allow write: if request.auth != null; 
+       // Ideally verify admin role here
+    }
+  }
+}
